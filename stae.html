@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css" integrity="sha512-jnSuA4Ss2PkkikSOLtYs8BlYIeeIK1h99ty4YfvRPAlzr377vr3CXDb7sb7eEEBYjDtcYj+AjBH3FLv5uSJuXg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.bundle.min.js" integrity="sha512-7Pi/otdlbbCR+LnW+F7PwFcSDJOuUJB3OxtEHbg4vSMvzvJjde4Po1v4BR9Gdc9aXNUNFVUY+SK51wWT8WF0Gg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    
+    <title>Document</title>
+    
+    <style>
+        body {
+            overflow-x: hidden;
+          
+        }
+        .nav-link{
+            color:white;
+            margin-left:20px;
+           
+          
+        }
+        a{
+            text-decoration: none;
+        }
+        .cell{
+            background-color:#DDDDDD ;
+            padding:20px;
+        }
+        .carousel{
+            box-shadow: 0px 1px 31px 3px #666;
+
+        }
+@media only screen and (min-width:700px){
+        .navbar {
+            position: absolute;
+            width: 100%;
+            z-index: 1000; 
+        }
+          
+            
+            .btn{
+               position: absolute;
+               left:1100px;
+               background-color: #223c8c;
+               border-radius: 0%;
+               width:150px;
+            }
+            .navbar-brand
+            {
+                position: absolute;
+                left:200px;
+                top:0px;
+
+            }
+            .nav-link:hover{
+                text-decoration:underline;
+                color:white;
+            }
+            .img-fluid{
+                margin-left:600px;
+            }
+           
+             
+          
+    }
+    @media only screen and (max-width:700px){
+        .navbar {
+            background-color: #223c8c;
+            align-items: center;
+        }
+        .btn{
+            border-color: white;
+            border-radius: 0%;
+        }
+        .img-fluid{
+            margin-left:150px;
+        }
+        .nav-link:hover{
+            text-decoration:none ;
+            
+
+        }
+       
+
+       
+
+
+    }
+        
+        
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-md">
+        <div class="container-fluid">
+           <div class="row">
+               <div class="col-1">
+                   <img src="https://www.golkondaresorts.com/img/1.png" height="130" width="100" alt="" class="navbar-brand">
+               </div>
+               <div class="col-3"></div>
+               <div class="col-4">
+                <a href="booknow.html"><button class="btn"><font color="white" size="2">BOOK NOW</font></button> </a>  
+               </div>
+               <div class="col-2">
+                   <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#mynav">
+                       <span class="navbar-toggler-icon"></span>
+                   </button>
+                   <div class="collapse navbar-collapse" id="mynav">
+                       <ul class="navbar-nav">
+                        <li class="nav-item"><a class="nav-link" href="index.html">HOME</a></li>
+                        <li class="nav-item"><a class="nav-link" href="stae.html">STAY</a></li>
+                        <li class="nav-item"><a class="nav-link" href="dine.html">DINE</a></li>
+                        <li class="nav-item"><a class="nav-link" href="spa.html">SPA</a></li>
+                        <li class="nav-item"><a class="nav-link" href="events.html">EVENTS</a></li>
+                       
+                        <li class="nav-item"><a class="nav-link" href="gallary.html">GALLERY</a></li>
+                       </ul>
+                   </div>
+               </div>
+           </div>
+        </div>
+    </nav>
+
+    <div class="container-fluid" style="padding: 0%;">
+          <video class="myvideo" width="100%" autoplay loop muted>
+            <source src="https://www.golkondaresorts.com/img/dinevid.mp4" type="video/mp4" >
+          </video>
+
+     </div>
+   <br><br>
+
+   <div class="container">
+    <div class="row">
+        <div class="col-md-12">
+        <div class="col-md-2">
+    <img src="https://www.golkondaresorts.com/images/Icon.png">
+    </div>
+    <div class="col-md-2">
+       <h1><font color="#223c8c " size="6">STAY</font></h1>
+   </div>
+   <div class="col-md-4"></div>
+   <p>Surrender to the pleasures of heavenly indulgence and unrivaled privacy. With lush greens, swaying palms and serene pool views, every villa has its own private garden in the front with huge windows as if extending into the landscape. Nestled cosily, our villas play hide & seek. Open and airy, yet warm and inviting, the interiors feel like home away from home. Sit under nature's parasol, stretch on deck chairs and explore open spaces which are refreshingly breezy. Very modern. Very in.</p>
+  </div>
+   </div>
+</div>
+
+
+<br><br>
+
+
+<div class="container-fluid">
+    <div class="row">
+     <div class="col-md-6">
+    <div class="carousel slide w-100   carousel" id="car" data-bs-ride="carousel">
+     <div class="carousel-inner">
+ 
+         <div class="carousel-item active">
+             <img src="https://www.golkondaresorts.com/images/studio%20room.jpg" alt="first slide" class="d-block w-100">
+         </div>
+         <div class="carousel-item">
+              <img src="https://www.golkondaresorts.com/img/rooms/clubvilla/4.jpg" alt="first slide"class="d-block w-100">
+         </div>
+         <div class="carousel-item">
+             <img src="https://www.golkondaresorts.com/img/rooms/palmvilla/2.jpg" alt="first slide" class="d-block w-100">
+         </div>
+         <div class="carousel-item">
+             <img src="https://www.golkondaresorts.com/img/rooms/palmvilla/6.jpg" alt="first slide" class="d-block w-100">
+         </div>
+         <div class="carousel-item">
+             <img src="https://www.golkondaresorts.com/img/poolx1.jpg" alt="first slide" class="d-block w-100">
+          </div>
+         <div class="carousel-item">
+             <img src="https://www.golkondaresorts.com/img/poolv.jpg" alt="first slide" class="d-block w-100">
+         </div>
+         <div class="carousel-item">
+             <img src="https://www.golkondaresorts.com/img/poolx1.jpg" alt="first slide" class="d-block w-100">
+         </div>
+         <div class="carousel-item">
+             <img src="https://www.golkondaresorts.com/img/rooms/duplexvilla/3.jpg" alt="first slide" class="d-block w-100">
+                                  
+         </div>
+
+          <a class="carousel-control-prev" data-bs-slide="prev" data-bs-target="#car">
+           <span class="carousel-control-prev-icon"></span>
+         </a>
+         <a class="carousel-control-next" data-bs-slide="next" data-bs-target="#car">
+           <span class="carousel-control-next-icon"></span>
+         </a>
+      </div>
+     </div>
+ </div>
+ 
+
+                 <div class="col-md-4">
+                     <h1><font color="#223C8C" size="5">Premium Rooms</font></h1>
+                     <p>A natural extension to the serenity of nature, these newly made Studio rooms are designed to exude a vibe of contemporary living. The rooms open up to a balcony with a view of greenery in all its glory. High-end fittings and fixtures along soft colours create for a truly relaxing environment.</p>
+                     <p><font color="black">Size : 380 Sq.Ft.</font></p>
+                     <label> <button><a href="booknow.html"><font color="#F5823F">ROOM PLAN</font></a></button>
+                        <button><a href="booknow.html"><font color="#F5823F">BOOK NOW</font></a></button></label>
+                 </div>   
+             </div>
+
+         </div>
+     </div>
+     <br><br>
+  
+    <div class="container-fluid">
+     <div class="row">
+      <div class="col-md-6">
+     <div class="carousel slide w-100   carousel" id="car" data-bs-ride="carousel">
+
+      <div class="carousel-inner">
+  
+          <div class="carousel-item active">
+              <img src="https://www.golkondaresorts.com/img/rooms/gardenvilla/5.jpg" alt="first slide" class="d-block w-100">
+          </div>
+          <div class="carousel-item">
+               <img src="https://www.golkondaresorts.com/img/rooms/gardenvilla/1.jpg" alt="first slide" class="d-block w-100">
+          </div>
+          <div class="carousel-item">
+              <img src="https://www.golkondaresorts.com/img/rooms/gardenvilla/2.jpg" alt="first slide" class="d-block w-100">
+          </div>
+          
+          <div class="carousel-item">
+              <img src="https://www.golkondaresorts.com/img/poolx1.jpg" alt="first slide" class="d-block w-100">
+          </div>
+          <div class="carousel-item">
+              <img src="https://www.golkondaresorts.com/img/rooms/duplexvilla/3.jpg" alt="first slide" class="d-block w-100">
+                                   
+          </div>
+
+           <a class="carousel-control-prev" data-bs-slide="prev" data-bs-target="#car">
+            <span class="carousel-control-prev-icon"></span>
+          </a>
+          <a class="carousel-control-next" data-bs-slide="next" data-bs-target="#car">
+            <span class="carousel-control-next-icon"></span>
+          </a>
+       </div>
+      </div>
+  </div>
+  
+
+                  <div class="col-md-4">
+                      <h1><font color="#223C8C" size="5">Green Wood Villa</font></h1>
+                      <p>Feel at home in the warm and inviting Green Wood Villa. Equipped with a host of features and amenities, the villa features a sitting Area, spacious bedroom and a bathroom with a cubicle. The villa infuses you with a sense of relaxation and calm.</p>
+                      <p><font color="black">Size : 380 Sq.Ft.</font></p>
+                      <label> <button><a href="booknow.html"><font color="#F5823F">ROOM PLAN</font></a></button>
+                        <button><a href="booknow.html"><font color="#F5823F">BOOK NOW</font></a></button></label>
+                  </div>   
+              </div>
+
+          </div>
+      </div>
+      <br><br>
+      <div class="container-fluid">
+        <div class="row">
+         <div class="col-md-6">
+        <div class="carousel slide w-100   carousel" id="car" data-bs-ride="carousel">
+ 
+         <div class="carousel-inner">
+     
+             <div class="carousel-item active">
+                 <img src="https://www.golkondaresorts.com/img/rooms/gardenvilla/nizam-suite.jpg" alt="first slide" class="d-block w-100">
+             </div>
+             <div class="carousel-item">
+                  <img src="https://www.golkondaresorts.com/img/rooms/gardenvilla/nizam-suite3.jpg" alt="first slide" class="d-block w-100">
+             </div>
+             <div class="carousel-item">
+                 <img src="https://www.golkondaresorts.com/img/rooms/gardenvilla/nizam-suite4.jpg" alt="first slide" class="d-block w-100">
+             </div>
+             
+             <div class="carousel-item">
+                 <img src="https://www.golkondaresorts.com/img/rooms/gardenvilla/nizam-suite.jpg" alt="first slide" class="d-block w-100">
+             </div>
+             
+ 
+              <a class="carousel-control-prev" data-bs-slide="prev" data-bs-target="#car">
+               <span class="carousel-control-prev-icon"></span>
+             </a>
+             <a class="carousel-control-next" data-bs-slide="next" data-bs-target="#car">
+               <span class="carousel-control-next-icon"></span>
+             </a>
+          </div>
+         </div>
+     </div>
+                <div class="col-md-4">
+                         <h1><font color="#223C8C" size="5">Nizam Suite</font></h1>
+                         <p>Get swaddled by comfort and serenity in our stylish Nizam Suite. Explore our luxurious living room, 2 magnificent bedrooms with attached bathroom and enjoy your moments of peace. Spend moments in a small private sit out, get a view of our iconic penthouse (Jewel of Nizam - The Minar) and let time just fly by.</p>
+                         <p><font color="black">Size: 850 Sq. Ft.</font></p>
+                         <label> <button><a><font color="#F5823F">ROOM PLAN</font></a></button>
+                            <button><a><font color="#F5823F">BOOK NOW</font></a></button></label>
+                     </div>   
+                 </div>
+                  </div>
+         
+               <br><br>
+
+                  <div class="container-fluid">
+                    <div class="row">
+                     <div class="col-md-6">
+                    <div class="carousel slide w-100   carousel" id="car" data-bs-ride="carousel">
+             
+                     <div class="carousel-inner">
+                 
+                         <div class="carousel-item active">
+                             <img src="https://www.golkondaresorts.com/img/rooms/duplexvilla/9.jpg" alt="first slide"class="d-block w-100">
+                         </div>
+                         <div class="carousel-item">
+                              <img src="https://www.golkondaresorts.com/img/rooms/duplexvilla/3.jpg" alt="first slide" class="d-block w-100">
+                         </div>
+                         <div class="carousel-item">
+                             <img src="https://www.golkondaresorts.com/img/rooms/duplexvilla/6.jpg" alt="first slide" class="d-block w-100">
+                         </div>
+                         
+                         <div class="carousel-item">
+                             <img src="https://www.golkondaresorts.com/img/rooms/duplexvilla/2.jpg" alt="first slide" class="d-block w-100">
+                         </div>
+                         
+             
+                          <a class="carousel-control-prev" data-bs-slide="prev" data-bs-target="#car">
+                           <span class="carousel-control-prev-icon"></span>
+                         </a>
+                         <a class="carousel-control-next" data-bs-slide="next" data-bs-target="#car">
+                           <span class="carousel-control-next-icon"></span>
+                         </a>
+                      </div>
+                     </div>
+                 </div>
+                  <div class="col-md-4">
+                     <h1><font color="#223C8C" size="5">Duplex Pool Villa</font></h1>
+                     <p>This double-storied villa makes your stay truly comfortable and memorable, with 2 bedrooms and a private garden. The Duplex Villa is the perfect choice for a family vacation.</p>
+                     <p><font color="black">Size : 1180 Sq.Ft.</font></p>
+                     <label> <button><a href="booknow.html"><font color="#F5823F">ROOM PLAN</font></a></button>
+                        <button><a href="booknow.html"><font color="#F5823F">BOOK NOW</font></a></button></label>
+                    </div>   
+                </div>
+            </div>
+                    
+                                
+                      
+              
+            <br>
+            <footer class="footer" style="background-color:#223c8c; color:white; padding:2%;">
+               <div class="container-fluid">
+                 <div class="row">
+                   <div class="col-md-1"></div>
+                   <div class="col-md-3">
+                     <h5>LOCATION</h5>
+                     <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15229.849781661931!2d78.315184!3d17.389581!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb94ea0407ff2b%3A0x44119678056c3677!2sThe%20Golkonda%20Resorts%20%26%20Spa!5e0!3m2!1sen!2sus!4v1712330812663!5m2!1sen!2sus" width="200" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                     </div>
+                     <div class="col-md-3">
+                       <h5>CONTACT US</h5>
+                     <p>Sagar Mahal Complex, Gandipet,<br>
+                     R R District, Near Financial District,<br>
+                     Osman Sagar Lake, Hyderabad, Telangana - 500075</p>
+                     <p>Email: <a href="mailto:info@golkondaresorts.com">info@golkondaresorts.com</a></p>
+                   </div>
+                   <div class="col-md-2">
+                     <h5>CALL US</h5>
+                     <p>9666123999<br>040 3501 0101</p>
+                   </div>
+                   <div class="col-md-3">
+                     <h5>QUICK LINKS</h5>
+                     <ul class="list">
+                       <li>Terms & Conditions</li>
+                       <li>360° Virtual Tour</li>
+                       <li>Privacy Policy</li>
+                       <li>Contact Us</li>
+                       <li>About Us</li>
+                       <li>Careers</li>
+                       <li>Sitemap</li>
+                       <li>Blog</li>
+                     </ul>
+                   </div>
+                 </div>
+       
+                   </div>
+                 </div>
+                 <div class="container lasthead">
+                 <div class="row">
+                   <hr class="horizental">
+                   <div class="col-md-12">
+                     <p class="text-center"><font color="white">&copy; 2024 Golkonda Resorts, Inc. All Rights Reserved.</font></p>
+                   </div>
+                 </div>
+               </div>
+              
+             </footer>
+           
+    </body>
+</html>

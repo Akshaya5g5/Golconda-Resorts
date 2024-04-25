@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css" integrity="sha512-jnSuA4Ss2PkkikSOLtYs8BlYIeeIK1h99ty4YfvRPAlzr377vr3CXDb7sb7eEEBYjDtcYj+AjBH3FLv5uSJuXg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.bundle.min.js" integrity="sha512-7Pi/otdlbbCR+LnW+F7PwFcSDJOuUJB3OxtEHbg4vSMvzvJjde4Po1v4BR9Gdc9aXNUNFVUY+SK51wWT8WF0Gg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    
+    <title>Document</title>
+    
+    <style>
+        body {
+            overflow-x: hidden;
+            margin: 0;
+            padding: 0;
+            position: relative; 
+        }
+        .nav-link{
+            color:white;
+            margin-left:20px;
+        }
+        a{
+            text-decoration: none;
+        }
+        .form{
+            position:absolute;
+            top:50px;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 1; 
+        }
+        @media only screen and (min-width:700px){
+            .navbar {
+                position: absolute;
+                width: 100%;
+                z-index: 1000; 
+            }
+            .btn{
+                position: absolute;
+                left:1100px;
+                background-color: #223c8c;
+                border-radius: 0%;
+                width:150px;
+            }
+            .navbar-brand {
+                position: absolute;
+                left:200px;
+                top:0px;
+            }
+            .nav-link:hover{
+                text-decoration:underline;
+                color:white;
+            }
+            .img-fluid{
+                margin-left:600px;
+            }
+        }
+        @media only screen and (max-width:700px){
+            .toHide{
+                display: none;
+            }
+            .navbar {
+                background-color: #223c8c;
+                align-items: center;
+            }
+            .btn{
+                border-color: white;
+                border-radius: 0%;
+            }
+            .img-fluid{
+                margin-left:150px;
+            }
+            .navbar{
+                position: absolute;
+                z-index:1000;
+                display: none;
+            }
+            .bookform{
+                margin-top: 200px;
+            }
+
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-md" style="background-color: #223c8c;">
+        <div class="container-fluid">
+           <div class="row">
+               <div class="col-1">
+                   <img src="https://www.golkondaresorts.com/img/1.png" height="50" width="100" alt="" class="navbar-brand">
+               </div>
+               <div class="col-3"></div>
+               <div class="col-2">
+                <a href="booknow.html"><button class="btn"><font color="white" size="2">BOOK NOW</font></button> </a> 
+               </div>
+               <div class="col-2">
+                   <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#mynav">
+                       <span class="navbar-toggler-icon"></span>
+                   </button>
+                   <div class="collapse navbar-collapse" id="mynav">
+                       <ul class="navbar-nav">
+                           <li class="nav-item"><a class="nav-link" href="index.html">HOME</a></li>
+                           <li class="nav-item"><a class="nav-link" href="stae.html">STAY</a></li>
+                           <li class="nav-item"><a class="nav-link" href="dine.html">DINE</a></li>
+                           <li class="nav-item"><a class="nav-link" href="spa.html">SPA</a></li>
+                           <li class="nav-item"><a class="nav-link" href="events.html">EVENTS</a></li>
+                           
+                           <li class="nav-item"><a class="nav-link" href="gallary.html">GALLERY</a></li>
+                       </ul>
+                   </div>
+               </div>
+           </div>
+        </div>
+    </nav>
+
+    <div class="container-fluid" style="padding:0%;">
+        <div class="container-fluid" style="position: relative;">
+            <img src="https://images.pexels.com/photos/258154/pexels-photo-258154.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" class="d-block w-100 toHide" style="padding: 0%;">
+            <div class="container-fluid" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="container-fluid bookform" style="border: 1px solid lightgrey; width: 400px; padding: 20px; border-radius: 10px; background-color: #f8f9fa;">
+                            <h1 style="color: #223c8c; font-size: 24px; text-align: center; margin-bottom: 20px;">BOOK NOW</h1> 
+                            <form id="bookingForm">
+                                <div style="margin-bottom: 15px;">
+                                    <label for="userName" style="color: #223c8c; font-size: 16px;">Name:</label><br>
+                                    <input type="text" id="userName" name="userName" placeholder="Enter Username" style="width: 100%; padding: 10px; border-radius: 5px; border: 1px solid #ced4da;" required>
+                                </div>
+
+                                <div style="margin-bottom: 15px;">
+                                    <label for="phoneNumber" style="color: #223c8c; font-size: 16px;">Phone Number:</label><br>
+                                    <input type="tel" id="phoneNumber" name="phoneNumber" pattern="[0-9]{10}" placeholder="Enter Phone Number" style="width: 100%; padding: 10px; border-radius: 5px; border: 1px solid #ced4da;" required>
+                                </div>
+
+                                <div style="margin-bottom: 15px;">
+                                    <label for="bookingDate" style="color: #223c8c; font-size: 16px;">Date:</label><br>
+                                    <input type="date" id="bookingDate" name="bookingDate" style="width: 100%; padding: 10px; border-radius: 5px; border: 1px solid #ced4da;" required>
+                                </div>
+
+                                <button type="submit" id="bookNowBtn" style="background-color: #223c8c; color: white; border: none; border-radius: 5px; padding: 10px 20px; cursor: pointer;">Book Now</button>
+                            </form> 
+
+                            <div id="bookingMessage" style="display: none; color: green; text-align: center; margin-top: 20px; font-size: 18px;">
+                                Successfully booked!
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+   
+    <script>
+        document.getElementById("bookingForm").addEventListener("submit", function(event) {
+            event.preventDefault();
+            document.getElementById("bookingMessage").style.display = "block";
+        });
+    </script>
+</body>
+</html>
